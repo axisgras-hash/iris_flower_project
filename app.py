@@ -7,7 +7,7 @@ import seaborn as sns
 import pickle
 
 st.title('🪻Iris Flower Classification Project using ML🪻')
-
+st.image('https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png')
 
 data = load_iris()
 
@@ -17,6 +17,7 @@ target_class = data['target_names']
 # target_class
 
 st.sidebar.title('Select Iris Features')
+st.sidebar.image('https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png')
 
 
 user_input = []
@@ -42,6 +43,7 @@ for i,j in enumerate(prob):
   st.write(f'Probability of {flower} is : {round(j*100,2)}')
 
 st.success(f'The Final predicted Flower is : {flower_name}')
+
 
 
 
