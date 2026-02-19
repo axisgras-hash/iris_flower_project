@@ -47,6 +47,8 @@ with st.spinner('Wait for it...'):
     time.sleep(2)
 st.success(f'The Final predicted Flower is : {flower_name}')
 
+st.image(f'{flower_name.lower()}' + '.png')
+
 st.markdown("### 👨‍💻 Connect with Me")
 
 st.markdown(
@@ -55,6 +57,7 @@ st.markdown(
     💼 **LinkedIn:** [https://linkedin.com/in/axisgras-hash](https://linkedin.com/in/axisgras-hash)
     """
 )
+
 
 
 
