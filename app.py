@@ -5,6 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pickle
+import time
 
 st.title('🪻Iris Flower Classification Project using ML🪻')
 st.image('https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Machine+Learning+R/iris-machinelearning.png')
@@ -42,7 +43,18 @@ for i,j in enumerate(prob):
   flower = target_class[i]
   st.write(f'Probability of {flower} is : {round(j*100,2)}')
 
+with st.spinner('Wait for it...'):
+    time.sleep(2)
 st.success(f'The Final predicted Flower is : {flower_name}')
+
+st.markdown("### 👨‍💻 Connect with Me")
+
+st.markdown(
+    """
+    🔗 **GitHub:** [https://github.com/axisgras-hash](https://github.com/axisgras-hash)  
+    💼 **LinkedIn:** [https://linkedin.com/in/axisgras-hash](https://linkedin.com/in/axisgras-hash)
+    """
+)
 
 
 
