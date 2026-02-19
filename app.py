@@ -30,7 +30,7 @@ for i in X:
 
 final_input = [user_input]
 
-with open('iris_model.pkl', 'wb') as f:
+with open('iris_model.pkl', 'rb') as f:
   chatgpt = pickle.load(f)
 
 final_ans = chatgpt.predict(final_input)[0]
@@ -42,5 +42,6 @@ for i,j in enumerate(prob):
   st.write(f'Probability of {flower} is : {round(j*100,2)}')
 
 st.success(f'The Final predicted Flower is : {flower_name}')
+
 
 
